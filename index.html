@@ -223,14 +223,20 @@
   }
 
   /* CONTACT CARDS */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
   .contact-card {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    padding: 1rem;
+    text-align: center;
+    gap: 0.5rem;
+    padding: 1rem 0.5rem;
     background: #f9fafb;
     border-radius: 10px;
-    margin-bottom: 0.5rem;
   }
   .contact-avatar {
     width: 48px;
@@ -320,6 +326,39 @@
 </div>
 
 <div class="container">
+
+  <!-- CHAPERONE CONTACTS -->
+  <div class="section">
+    <div class="section-header">
+      <h2>&#x1F4DE; Chaperone Contacts</h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-avatar">MJ</div>
+        <div class="contact-info">
+          <div class="contact-name">Mose James IV</div>
+          <div class="contact-role">Chaperone</div>
+          <div class="contact-actions">
+            <a href="tel:4048493220" class="btn-call">&#x1F4DE; Call</a>
+            <a href="sms:4048493220" class="btn-text">&#x1F4AC; Text</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-avatar">XC</div>
+        <div class="contact-info">
+          <div class="contact-name">Xavier Carter Sr.</div>
+          <div class="contact-role">Chaperone</div>
+          <div class="contact-actions">
+            <a href="tel:2022717812" class="btn-call">&#x1F4DE; Call</a>
+            <a href="sms:2022717812" class="btn-text">&#x1F4AC; Text</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- IMPORTANT ALERTS -->
   <div class="section">
@@ -478,34 +517,12 @@
     </div>
   </div>
 
-  <!-- CHAPERONE CONTACTS -->
+  <!-- PARENT GROUP CHAT -->
   <div class="section">
-    <div class="section-header">
-      <h2>&#x1F4DE; Chaperone Contacts</h2>
-    </div>
-
-    <div class="contact-card">
-      <div class="contact-avatar">MJ</div>
-      <div class="contact-info">
-        <div class="contact-name">Mose James IV</div>
-        <div class="contact-role">Lead Chaperone</div>
-        <div class="contact-actions">
-          <a href="tel:4048493220" class="btn-call">&#x1F4DE; Call</a>
-          <a href="sms:4048493220" class="btn-text">&#x1F4AC; Text</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="contact-card">
-      <div class="contact-avatar">XC</div>
-      <div class="contact-info">
-        <div class="contact-name">Xavier Carter Sr.</div>
-        <div class="contact-role">Co-Chaperone</div>
-        <div class="contact-actions">
-          <a href="tel:2022717812" class="btn-call">&#x1F4DE; Call</a>
-          <a href="sms:2022717812" class="btn-text">&#x1F4AC; Text</a>
-        </div>
-      </div>
+    <div class="card" style="text-align: center; background: #e0f2fe; border: 1px solid #7dd3fc;">
+      <p style="font-size: 0.95rem; font-weight: 600; color: var(--navy); margin-bottom: 0.25rem;">&#x1F4AC; Parent Group Chat</p>
+      <p style="font-size: 0.85rem; color: var(--muted);">Photos from the campout will be shared in the GroupMe. Check in there for updates and to coordinate with other parents.</p>
+      <a href="https://groupme.com/join_group/113529853/XRbFP4dx" target="_blank" style="display: inline-block; margin-top: 0.75rem; background: #00aff0; color: white; text-decoration: none; padding: 0.6rem 1.5rem; border-radius: 8px; font-size: 0.9rem; font-weight: 600;">Open GroupMe &#x2192;</a>
     </div>
   </div>
 
